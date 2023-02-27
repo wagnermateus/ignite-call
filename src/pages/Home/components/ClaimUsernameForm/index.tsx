@@ -26,7 +26,7 @@ export function ClaimUsernameForm() {
     resolver: zodResolver(claimUsernameFormSchema),
   })
 
-  function handleClaimUsername(data: ClaimUsernameFormdata) {
+  async function handleClaimUsername(data: ClaimUsernameFormdata) {
     console.log(data)
   }
 
