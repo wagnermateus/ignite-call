@@ -55,7 +55,7 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
     })
 
     const firstWeekDay = currentDate.get('day')
-
+    console.log(firstWeekDay)
     const previousMonthFillArray = Array.from({
       length: firstWeekDay,
     })
@@ -63,7 +63,7 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
         return currentDate.subtract(i + 1, 'day')
       })
       .reverse()
-
+    console.log(previousMonthFillArray)
     const lastDayInCurrentMonth = currentDate.set(
       'date',
       currentDate.daysInMonth(),
